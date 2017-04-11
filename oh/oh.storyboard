@@ -18,7 +18,11 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="ｏｈ。" systemMenu="apple" id="lib-ya-gYg">
                                     <items>
-                                        <menuItem title="Ｂｙｅ" state="on" keyEquivalent="q" id="5Xl-dQ-akF"/>
+                                        <menuItem title="Ｂｙｅ" keyEquivalent="q" id="5Xl-dQ-akF">
+                                            <connections>
+                                                <action selector="terminate:" target="tOL-yI-Z2a" id="1at-CI-v0g"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
