@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="Fdz-dP-hFz">
+            <objects>
+                <application id="tOL-yI-Z2a" customClass="Application" customModule="___" customModuleProvider="target" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="BF0-6r-WLZ">
+                        <items>
+                            <menuItem title="ｏｈ。" id="Agy-ql-cUw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="ｏｈ。" systemMenu="apple" id="lib-ya-gYg">
+                                    <items>
+                                        <menuItem title="Ｂｙｅ" state="on" keyEquivalent="q" id="5Xl-dQ-akF"/>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="H5n-5o-AmW" id="QRo-FN-Lsd"/>
+                        <outlet property="touchBar" destination="Lbz-zL-QGc" id="1Vk-RL-7A4"/>
+                    </connections>
+                </application>
+                <customObject id="oG9-Pm-cTY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <touchBar id="Lbz-zL-QGc" userLabel="NSTouchBar">
+                    <touchBarItems>
+                        <touchBarItem id="SYx-4E-BGr" userLabel="OhButton">
+                            <viewController key="viewController" storyboardIdentifier="f" id="DgQ-br-cQb">
+                                <button key="view" identifier="Ohhh" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-Yp-b9a">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                    <buttonCell key="cell" type="push" title="ｏｈ。" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VeB-fd-fOW">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="PlayMemeSound:" target="tOL-yI-Z2a" id="kSd-zP-Qy4"/>
+                                    </connections>
+                                </button>
+                            </viewController>
+                            <size key="designTimeSize" width="72" height="30"/>
+                        </touchBarItem>
+                    </touchBarItems>
+                    <connections>
+                        <outlet property="delegate" destination="tOL-yI-Z2a" id="ods-Vf-tyz"/>
+                    </connections>
+                </touchBar>
+                <customObject id="H5n-5o-AmW" customClass="AppDelegate" customModule="___" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-536" y="-583"/>
+        </scene>
+    </scenes>
+</document>
